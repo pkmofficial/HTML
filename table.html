@@ -1,0 +1,264 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+
+        /* TABLE 2 */
+        /* #table2 {
+            border: 1px solid rgb(56, 55, 55);
+        }
+        #table2 th {
+            border: 1px solid rgb(56, 55, 55);
+        }
+        #table2 td{
+            border: 1px solid rgb(56, 55, 55);
+        } */
+        
+
+        /* TABLE 3 */
+        #table3 {
+            border: 3px solid rgb(239, 17, 247);
+        }
+        #table3 th {
+            border: 2px solid rgb(241, 28, 32);
+        }
+        #table3 td{
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+
+        /* TABLE 4 */
+        #table4 {
+            border: 3px solid rgb(239, 17, 247);
+        }
+        #table4 th {
+            border: 2px solid rgb(241, 28, 32);
+            padding: 20px;
+            background-color: rgb(31, 255, 255);
+        }
+        #table4 td{
+            /* text-align: center; */
+            border: 1px solid rgb(19, 12, 12);
+            padding: 7px;
+        }
+
+
+        /* TABLE 5 */
+        #table5 {
+            border: 3px solid rgb(239, 17, 247);
+        }
+        #table5 th {
+            border: 2px solid rgb(241, 28, 32);
+            padding: 20px;
+            background-color: rgb(31, 255, 255);
+        }
+        #table5 td{
+            text-align: center;
+            border: 1px solid rgb(10, 4, 4);
+            padding: 7px;
+        }
+        
+
+        /* TABLE 6 */
+        #table6 {
+            border: 3px solid rgb(239, 17, 247);
+        }
+        #table6 th {
+            border: 2px solid rgb(241, 28, 32);
+            padding: 20px;
+            background-color: rgb(31, 255, 255);
+        }
+        #table6 td{
+            text-align: center;
+            border: 1px solid rgb(10, 4, 4);
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+table consist of 2 childs - thead and tbody (tfoot also sometimes)
+rows added using tr-tag
+columns within each row added using either 
+    th-tag(in heading rows) - it has bold letters and text is alligned by default
+    td-tag(in remaining rows) 
+    </pre>
+    <table>
+        <caption>table 1 - raw</caption>
+        <thead>
+            <tr>
+                <th>weight</th>
+                <th>height</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>60</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>170</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table id="table2" border="1px">
+        <caption>table 2 - border added as an attribute of table</caption>
+        <thead>
+            <tr>
+                <th>serial no.</th>
+                <th>name</th>
+                <th>weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>mitun</td>
+                <td>70kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>pabitra</td>
+                <td>80kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>prateek</td>
+                <td>60kg</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table id="table3">
+        <caption>table 3 - borders added , coloured and thickness increased using CSS</caption>
+        <thead>
+            <tr>
+                <th>serial no.</th>
+                <th>name</th>
+                <th>weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>mitun</td>
+                <td>70kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>pabitra</td>
+                <td>80kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>prateek</td>
+                <td>60kg</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <table id="table4">
+        <caption>table 4 - background color + padding added to head row and remaining rows </caption>
+        <thead>
+            <tr>
+                <th>serial no.</th>
+                <th>name</th>
+                <th>weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>mitun</td>
+                <td>70kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>pabitra</td>
+                <td>80kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>prateek</td>
+                <td>60kg</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table id="table5">
+        <caption>table 5 - colspan=2 in 2nd col or 2nd th of head row thead + text alligned in td (th has text alligned by default)</caption>
+        <thead>
+            <tr>
+                <th>serial no.</th>
+                <th colspan="2">name and weight</th>
+                <!-- <th>weight</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>mitun</td>
+                <td>70kg</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>pabitra</td>
+                <td>80kg</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>prateek</td>
+                <td>60kg</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table id="table6">
+        <caption>table 6 - rowspan</caption>
+        <thead>
+            <tr>
+                <th>serial no.</th>
+                <th>name</th>
+                <th>weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">1</td>
+                <td>mitun</td>
+                <td>70kg</td>
+            </tr>
+            <tr>
+                <!-- <td>2</td> -->
+                <td>pabitra</td>
+                <td>80kg</td>
+            </tr>
+            <tr>
+                <!-- <td>3</td> -->
+                <td>prateek</td>
+                <td>60kg</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+            <tr>
+                <td><img src="my img.jpeg" alt="moon" height="150px"></td>
+                <td>
+                    <pre>
+Name - Pabitra Kumar Mohanty ❤️
+Country - India
+Experience - 2+
+Branch - Mechanical ⭐⭐⭐
+                    </pre>
+                </td>
+            </tr>
+    </table>
+</body>
+</html>

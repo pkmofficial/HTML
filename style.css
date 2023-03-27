@@ -1,0 +1,18 @@
+/* 
+element selectors can be of different types 
+* : all elements
+[ below div is used as an common example to represent all the other element tags ]
+div : all div tags
+div,p : all divs and paragraphs
+div p : paragraphs inside divs
+.classname : all elements with class
+#idnam : eelement with ID
+div.classname : divs with certain classname
+div#idname : div with certain ID
+#idname* : all elements inside #idname
+
+*/
+/* *{
+    margin: 0;
+    padding: 0;
+} */

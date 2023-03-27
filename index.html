@@ -1,0 +1,138 @@
+<!-- 
+    HTML - hypertext markup language
+    .html file has 2 childs - head , body
+    head contains name of webpage and body contains content of webpage
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name of Webpage</title>
+    <!-- added external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- website logo -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- <> enclosed keywords are called TAGS or elements  -->
+    <!-- eg. most common <div> </div> tag -->
+    <div class="part1" id="01">Hello World using div tag</div>
+    <p class="part1" > < > enclosed keywords are called TAGS or elements </p>
+    <p class="part1" >their property are known as attributes - mentioned within the opening tag itself</p>
+    <span class="part1" >
+        some very common attribute used for identofication are :-
+        <ul>
+            <li>id : unique identity</li>
+            <li>class : group identity</li>
+            <li>name : its also an identity but specifically unique or group - it is used sometimes in backend - and it can be same as id</li>
+        </ul>
+    </span>
+
+    <!-- 
+        some empty tags ( these have no closing tags) - 
+        <br> new line
+        <hr> page break - horizontal line
+        <img> inserts an image 
+    -->
+
+    <hr>
+
+    <!-- heading tags -->
+    <h1>H1 heading</h1>
+    <h2>H2 heading</h2>
+    <h3>H3 heading</h3>
+    <h4>H4 heading</h4>
+    <h5>H5 heading</h5>
+    <h6>H6 heading</h6>
+
+    <hr>
+
+    <!-- paragraph tag -->
+    <p>paragraph p-tag Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, doloribus.</p>
+    <hr>
+
+    <!-- pre-tag -->
+    <pre>
+EMPTY TAGS
+This para is written using pre tag which includes pre-deffined spaces and formatting.
+    some empty tags ( these have no closing tags) - 
+        br - new line ( used between h2 and h6)
+        hr - horizontal line or page break
+        img - inserts an image 
+        input - used in forms to take user-input of different data
+    </pre> <hr>
+    <img src="/123.jpg" alt="laptop img" height="200px"> <hr>
+
+    <p>
+        <b>FORMATTING TAGS </b> <br>
+        <span>span-tag : inline element (only consumes required space)</span>
+        <b>b - bold tag</b> <br>
+        <i>i - italics tag</i> <br>
+        <strong> strong - tag - bold with actual imprtance in seo </strong> <br>
+        <em>em - tag - italics with actual imprtance in seo</em> <br>
+        <small>small - tag : makes words smaller </small> <br>
+        <mark> mark - tag : highlights words - default yellow background - changed using css</mark> <br>
+        <del>del tag</del> <br>
+        <ins>ins tag</ins> <br>
+        superscript <sup> sup tag</sup> <br>
+        subscript<sub>sub tag</sub> <br>
+        
+        <q>q tag : for quotation</q> <br>
+        <blockquote> blockquote tag : Wake up to reality</blockquote><br>
+        <abbr title="World Health Organisation">WHO : abbr tag</abbr> <br>
+        <address> adress tag : Plot 368 , lane 7 , road 3 , Jagannath Vihar , Bhubaneswar </address>
+        <hr>
+    </p>
+
+    <p>
+        <b>ANCHOR TAGS</b> 
+        <p>a tag (anchor) is used to add html links to its content - text or image</p>
+        <a href="https://www.google.com/">Google</a> <br>
+        <a href="https://www.google.com/" target="blank">Google ( target="blank" )</a> <br>
+        <a href="https://www.amazon.in/" title=" Amazon-World's no.1 e-Commerce Website">
+            <img src="/amazon logo.jpg" alt="logo" height="150px">
+        </a>
+        <p>amazon logo has an hint added using a-tag attribute : title=" Amazon-World's no.1 e-Commerce Website"</p>
+        <p>we can also move to local links on our webpage means some perticular element by mentioning its #ID inside href</p>
+        <p><b>email</b> can be linked using href="mailto:emailID" attribute inside a-tag </p>
+        <a href="mailto:pabitrakumarm084@gmail.com"> Contact me via eMail</a> <br>
+        <a href="new.html" target="blank">Click to open new local html page</a>
+    </p>
+<hr>
+    <marquee behavior="" direction="left">this is writted using <b> marque-tag</b> with direction attribute:left</marquee>
+    <p>behavior attribute : scroll(default-in loop) , alternate(bounces back) , slide(stops in the end) </p>
+<hr>
+
+    <div>
+        <a href="list.html" target="blank"><b>LIST</b></a>
+    </div> <hr>
+
+    <div>
+        
+        <a href="embedding.html" target="blank">EMBEDDING</a>
+
+    </div> <hr>
+  
+    <div>
+        <a href="form.html" target="blank"><b>HTML FORMS</b></a>
+    </div> <hr>
+
+    <div>
+        <a href="table.html" target="blank"><b>HTML TABLES</b></a>
+    </div> <hr>
+    <div>
+        semantic elements can be referred from w3 or mdn. elements used for different purposes - like header , nav , div , section , article , aside , footer <hr>
+        every element can be of 2 types based on its default display value - inline(takes minimum space) or block(occupies max space from left to right of screen - may also have margin,padding by default) <br> <br>
+        example of inline : a , b , i , sup , sub , abbr , img , span , textarea , input , code , select , br etc <br> <br>
+        example of block : div , p , header , body , footer , aside , h , hr , section , video , article , nav , form , table , pre , ol , ul , li etc
+    </div> <br>
+    <div>
+        no need to mug-up(only overview req) - as display properties can be altered using css
+    </div>
+</body>
+</html>
